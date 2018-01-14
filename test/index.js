@@ -1,10 +1,14 @@
 import { expect } from 'chai'
-import { theAnswer, getTheAnswer, recall } from '../dist/the-answer'
+import { theAnswer, getTheAnswer, recall, notTheAnswer } from '../dist/the-answer'
 
 describe('the answer', () => {
   it('is supposed to be 42', () => {
     expect(theAnswer).to.eq(42)
     expect(getTheAnswer()).to.eq(42)
+  })
+  it('is not equal to the other answer', () => {
+    expect(notTheAnswer).to.be.not.null
+    expect(notTheAnswer).to.not.eq(theAnswer)
   })
 })
 

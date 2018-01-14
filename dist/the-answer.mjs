@@ -10,6 +10,11 @@ var recall = function recall() {
   return constant$1('the-answer');
 };
 
+var notTheAnswer = 24;
+var consts = {
+	notTheAnswer: notTheAnswer
+};
+
 // the answer
 var theAnswer = ENOPROTOOPT;
 // export it to constant package
@@ -18,6 +23,8 @@ memorize(theAnswer);
 var getTheAnswer = function getTheAnswer() {
   return theAnswer;
 };
+// not the answer
+var notTheAnswer$1 = consts.notTheAnswer;
 
-export { theAnswer, getTheAnswer, recall };
+export { theAnswer, getTheAnswer, recall, notTheAnswer$1 as notTheAnswer };
 //# sourceMappingURL=the-answer.mjs.map

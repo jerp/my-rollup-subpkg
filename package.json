@@ -12,11 +12,13 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "mocha": "^4.1.0",
     "rollup": "^0.54.0",
-    "rollup-plugin-babel": "^3.0.3"
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-json": "^2.3.0"
   },
   "dependencies": {
     "constant": "^1.0.2"
